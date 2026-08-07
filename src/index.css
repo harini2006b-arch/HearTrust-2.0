@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-headline: "Hanken Grotesk", sans-serif;
+  --font-mono: "Geist", monospace;
+  
+  --color-primary-indigo: #4648d4;
+  --color-navy-dark: #0b1c30;
+  --color-emerald-safe: #006c49;
+  --color-crimson-error: #ba1a1a;
+  
+  --color-bg-light: #f8f9ff;
+  --color-surface: #ffffff;
+  --color-container-low: #eff4ff;
+  --color-container-medium: #e5eeff;
+  --color-container-high: #dce9ff;
+  --color-container-highest: #d3e4fe;
+}
+
+@keyframes wave {
+  0%, 100% { height: 6px; }
+  50% { height: 28px; }
+}
+
+@keyframes scan {
+  0% { top: 0%; opacity: 0; }
+  50% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+@keyframes flash-red {
+  0%, 100% { background-color: #ba1a1a; }
+  50% { background-color: #93000a; }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.85); opacity: 0.6; }
+  100% { transform: scale(1.25); opacity: 0; }
+}
+
+.animate-wave {
+  animation: wave 1.5s infinite ease-in-out;
+}
+
+.animate-scan {
+  animation: scan 3s ease-in-out infinite;
+}
+
+.animate-flash-red {
+  animation: flash-red 1.2s infinite;
+}
+
+.pulse-ring-btn::before {
+  content: '';
+  position: absolute;
+  inset: -12px;
+  border: 2px solid #ba1a1a;
+  border-radius: 9999px;
+  animation: pulse-ring 1.8s infinite;
+}
+
+.shield-glow {
+  box-shadow: inset 0 0 12px rgba(70, 72, 212, 0.25), 0 4px 16px rgba(70, 72, 212, 0.15);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  line-height: 1;
+}
+
+/* Global Font Scaling adjustments (clearly visible and quite larger) */
+html {
+  font-size: 22px;
+}
+
+.text-\[7px\] { font-size: 11px !important; }
+.text-\[8px\] { font-size: 12px !important; }
+.text-\[9px\] { font-size: 14px !important; }
+.text-\[10px\] { font-size: 15px !important; }
+.text-\[11px\] { font-size: 16px !important; }
+

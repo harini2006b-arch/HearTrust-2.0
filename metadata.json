@@ -1,0 +1,6 @@
+{
+  "name": "HearTrust",
+  "description": "Real-time AI voice scam pattern analysis, caller risk evaluation, emergency dispatch protocols, and community threat reporting.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
