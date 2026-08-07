@@ -4,7 +4,7 @@ HearTrust 2.0 is an agentic, multi-layered cyber-security and crisis defense pla
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 1. [Abstract](#1-abstract)
 2. [The Problem Statement](#2-the-problem-statement)
 3. [The Proposed Solution](#3-the-proposed-solution)
@@ -121,11 +121,8 @@ When the emergency protocol finishes, a gentle, decaying alarm chime plays, conf
 npm install
 ```
 
-### 2. Start Development Server
-```bash
-npm run dev
-```
-Open **`http://localhost:3000`** (or the port specified in stdout, e.g., `http://localhost:3001`).
+### 2. Live Deployment Link
+https://hear-trust-2-0.vercel.app/
 
 ---
 
